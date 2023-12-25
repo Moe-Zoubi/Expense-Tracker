@@ -1,0 +1,79 @@
+.budget{
+    padding: 10px 15px;
+    overflow-y: auto;
+}
+
+.budget::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.budget::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+.budget::-webkit-scrollbar-thumb {
+    background: #73818b;
+}
+
+.budget-container{
+    background-color: #ede3da;
+    padding: 1rem;
+    border-radius: 15px;
+}
+
+.range-picker{
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+.chart-options{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.toggle-options{
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+}
+
+.toggle{
+    background-color: #acbace;
+    height: 30px;
+    width: 60px;
+    border-radius: 30px;
+    border: 2px solid black;
+    display: flex;
+}
+
+.toggle-left{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 3px;
+}
+
+.toggle-right{
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 3px 2px 3px 35px;
+}
+
+.chart-stats{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    align-items: center ;
+}
+
+.budget-line-chart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 3rem;
+}

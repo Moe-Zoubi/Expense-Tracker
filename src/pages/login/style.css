@@ -1,0 +1,69 @@
+/* landing page */
+.landing-page{
+    height: 100vh;
+    background: #2f2b3a;
+  }
+  
+  .logo{
+    display: flex;
+    padding-top: 1rem;
+  }
+  
+  .center-login{
+    position: relative;
+    margin: 15rem 0 0 0;
+    z-index: 999;
+  }
+  
+  .heading{
+    color: #A2D240;
+  }
+  
+  .intro{
+    margin: 2rem auto;
+    width: 50%;
+    font-weight: 600;
+    font-size: 20px;
+    color: white;
+  }
+  
+  .login-btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #CCCCCC;
+    color: #2f2b3a;
+    border: none;
+    transition: background-color 0.3s, color 0.3s;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  /* Hover styles */
+  .login-btn:hover {
+    background-color: #2f2b3a;
+    color: white;
+  }
+  
+  .wave-bg{
+    position: relative;
+    background: linear-gradient(to bottom, #04BF00, #015D00);
+    width: 100%;
+    height: 47%;
+    z-index: 1;
+  }
+  .circle{
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    top: -450px;
+    left: 0;
+    background-color: #2f2b3a;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  
+  

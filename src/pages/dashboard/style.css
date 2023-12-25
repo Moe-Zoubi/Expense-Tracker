@@ -1,0 +1,192 @@
+.dashboard{
+    padding: 10px 15px;
+    overflow-y: auto;
+}
+
+.dashboard::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.dashboard::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+.dashboard::-webkit-scrollbar-thumb {
+    background: #73818b;
+}
+
+.totals-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.amount{
+    padding-top: 10px;
+    margin-bottom: 0;
+    font-size: 25px;
+}
+.total-income{
+    color: #0047AB;
+}
+.total-expenses{
+    color: #FF6EC7;
+}
+.total-balance{
+    color: #86DC3D;
+}
+.total-budgets{
+    color: #45b6fe;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    color: #6a6a6a;
+}
+/* donut chart */
+.chart-card{
+    margin: 1rem auto;
+    width: 100%; 
+    background-color: #ede3da;
+    border-radius: 10px;
+    padding: 20px 15px;
+}
+.chart-card p{
+    font-weight: 600;
+    font-size: 16px;
+}
+.donut-chart{
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 8rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.display-chart{
+    height:400px !important;
+    width: 400px !important;
+}
+.display-item{
+    width: 600px !important;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.item{
+    width: 33%;
+    text-align: left;
+}
+
+.label-item{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.label-color{
+    height: 30px;
+    width: 35%;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.total-transactions{
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.year{
+    text-align: left;
+    margin: auto;
+    
+}
+.year-select {
+    padding: 5px 2rem;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.year-select:hover, .year-select:focus {
+    background:white;
+    color: #1f3b4d;
+}
+/* transaction line Chart */
+.transaction-Chart{
+    display: flex;
+    gap: 1rem;
+}
+.line-chart{
+    margin: auto 0;
+    padding: 5px;
+}
+.stat-item{
+    height: 100%;
+    width: 50%;
+}
+.stat{
+    height: 50%;
+    margin-bottom: 0;
+}
+.transaction-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transaction-header p{
+  font-weight: 600;
+}
+.display-min-max{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.display-min-max p{
+  color: gray;
+  font-weight: 600;
+  font-size: 20px;
+}
+.recent-transaction{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+.recent-transaction p{
+    font-size: 18px;
+}
+.type-income{
+    color: #86DC3D;
+}
+.type-expense{
+    color: red;
+}
+
+.expense-stats{
+    display: flex;
+    justify-content: space-between;
+}
+.expense-stats p{
+    font-size: 16px;
+}
+
+.monthly-container{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.monthly-total{
+    width: 40%;
+}
+
+.monthly-title{
+    font-size: 20px !important;
+    color: #000066;
+}

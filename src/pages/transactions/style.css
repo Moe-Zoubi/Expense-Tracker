@@ -1,0 +1,75 @@
+/* style.css */
+
+.transactions {
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.transactions::-webkit-scrollbar {
+    width: 8px;
+}
+  
+.transactions::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+.transactions::-webkit-scrollbar-thumb {
+    background: #73818b;
+}
+  
+  .page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-container {
+    display: block;
+  }
+  
+  .transaction-form {
+    width: 100%;
+    text-align: left;
+    background-color: #ede3da;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 1rem 0;
+  }
+  
+  .transaction-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .transaction-form input,
+  .transaction-form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .transaction-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .transaction-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .white-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

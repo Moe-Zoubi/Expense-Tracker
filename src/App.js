@@ -1,23 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Authorication } from './pages/login/index.jsx';
+import Dashboard from './pages/dashboard/index.jsx';
+import Transactions from './pages/transactions/index.jsx';
+import Budgets from './pages/budgets/index.jsx';
+import History from './pages/history/index.jsx';
+import Sidebar from './components/Sidebar.jsx';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+        <Routes>
+          <Route
+            path="/"
+            element={<Authorication />}
+          />
+            <Route
+              path="/*"
+              element={
+                <Sidebar>
+                  <Routes>
+                    <Route path="dashboard" element={<Dashboard />} />
+                    <Route path="transactions" element={<Transactions />} />
+                    <Route path="budgets" element={<Budgets />} />
+                    <Route path="history" element={<History />} />
+                  </Routes>
+                </Sidebar>
+              }
+            />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

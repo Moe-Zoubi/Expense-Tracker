@@ -1,0 +1,153 @@
+body {
+  color: #333333;
+}
+
+
+.bold{
+  font-size: 18px;
+  font-weight: 700;
+  color: black;
+}
+
+.transaction-history {
+  padding: 10px 15px;
+  overflow: hidden;
+}
+
+.transaction-header{
+  display: flex;
+  justify-content: space-between;
+  border: none;
+}
+
+
+.expenses-history{
+  background-color: #ede3da;
+  padding: 2rem;
+}
+
+.history {
+  border-radius: 15px;
+}
+
+
+
+
+.transaction-filter button {
+  background-color: transparent;
+  border: none;
+}
+
+
+.transaction-filter button:hover {
+  color: #596368;
+}
+
+
+.expense-list {
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.expense-item h4,
+.expense-item h3,
+.date {
+  color: #333333;
+}
+
+
+.history-list {
+  margin: 0;
+  padding: 0;
+  height: 90vh;
+  overflow-y: auto;
+}
+
+
+.history-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.history-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.history-list::-webkit-scrollbar-thumb {
+  background: #73818b;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+
+th {
+  background-color: white;
+  font-size: 18px;
+}
+
+thead{
+  border-top: gray solid 2px !important;
+  border-bottom: gray solid 2px !important;
+}
+
+
+th,
+td {
+  padding: 5px;
+  border: 1px solid #8d98a2;
+}
+
+
+tbody tr {
+  background-color: white;
+  border-bottom: gray solid 1px;
+}
+
+
+
+
+
+th:nth-child(1),
+th:nth-child(2),
+th:nth-child(3),
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3){
+  text-align: left ;
+}
+
+
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6) {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+}
+
+.center{
+  text-align: center !important;
+}
+
+td:nth-child(4){
+  font-weight: bold;
+  text-align: center;
+}
+
+
+td:nth-child(5),
+td:nth-child(6) {
+  color:#596368;
+}
+
